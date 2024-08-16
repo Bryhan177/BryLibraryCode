@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/img.png">
+    <link  rel="stylesheet" href="../Estilos/registro.css">
+    <title>BryLibraryCode</title>    
+    </head>
+    <body background="../img/img4.webp"></body>
+
+    <div class="burbujas">
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+    </div>
+    
+    <center><div class="wrapper">
+        <samp class="icon-close"><ion-icon name="close"></ion-icon></samp>
+        <!--  -->
+        <!-- Formulario de inicio de sesión -->
+        <div class="form-box login">
+            <h2>Acceso</h2>
+            <form id="login-form" action="http://localhost:5000/api/login" method="POST">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="correo" required>
+                    <label>Correo</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="contraseña" required>
+                    <label>Contraseña</label>
+                </div>
+                <a href="../Maquetacion/inicio.html">
+                <button type="submit" class="btn">Iniciar sesión</button></a>
+                <div class="login-register">
+                    <p>No tienes cuenta? <a href="#" class="register-link">Regístrate aquí</a></p>
+                </div>           
+            </form>
+        </div>
+        <!-- AQUI TERMINA EL INICIO DE SESION -->
+
+                 <!-- Formulario de registro -->
+            <div class="form-box register">
+                <h2>Registro</h2>
+                <form id="register-form" action="http://localhost:5000/api/register" method="POST">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" name="nombre" required>
+                        <label>Nombre</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" name="correo" required>
+                        <label>Correo</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" name="contraseña" required>
+                        <label>Contraseña</label>
+                    </div>
+                    <div class="input-box">
+                        <select name="rol">
+                            <option value="administrador">Administrador</option>
+                            <option value="estudiante">Estudiante</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Registrarse</button>
+                <div class="login-register">
+                    <p><a href="#" class="login-link">¿Ya tienes una cuenta?</a></p>
+                </div>   
+            </div>
+        </form>
+            
+    <script src="../Funciones/registro.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
